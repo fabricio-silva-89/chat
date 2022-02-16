@@ -31,7 +31,7 @@ class ChatMockService implements ChatService {
 
     _msg.add(newMessage);
 
-    _controller?.add(_msg);
+    _controller?.add(_msg.reversed.toList());
 
     return newMessage;
   }
