@@ -1,10 +1,9 @@
 import 'dart:async';
+import 'dart:io';
 import 'dart:math';
 
-import 'package:chat/core/models/chat_user.dart';
-import 'dart:io';
-
-import 'package:chat/core/services/auth/auth_service.dart';
+import '../../models/chat_user.dart';
+import 'auth_service.dart';
 
 class AuthMockService implements AuthService {
   static const _defaultUser = ChatUser(
@@ -14,9 +13,7 @@ class AuthMockService implements AuthService {
     imageUrl: 'assets/images/avatar.png',
   );
 
-  static final Map<String, ChatUser> _users = {
-    _defaultUser.email: _defaultUser
-  };
+  static final Map<String, ChatUser> _users = {_defaultUser.email: _defaultUser};
 
   static ChatUser? _currentUser;
 

@@ -1,9 +1,9 @@
 import 'dart:async';
 import 'dart:math';
 
-import 'package:chat/core/models/chat_user.dart';
-import 'package:chat/core/models/chat_message.dart';
-import 'package:chat/core/services/chat/chat_service.dart';
+import '../../models/chat_message.dart';
+import '../../models/chat_user.dart';
+import 'chat_service.dart';
 
 class ChatMockService implements ChatService {
   static final List<ChatMessage> _msg = [];
