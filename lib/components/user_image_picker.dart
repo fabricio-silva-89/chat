@@ -54,7 +54,7 @@ class _UserImagePickerState extends State<UserImagePicker> {
                 color: Theme.of(context).primaryColor,
               ),
               const SizedBox(width: 10),
-              const Text('Adicionar Image'),
+              const Text('Adicionar Imagem'),
             ],
           ),
         )
